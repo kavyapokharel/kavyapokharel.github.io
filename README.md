@@ -1,0 +1,1 @@
+This is my personal website, built to showcase my projects, research, publications, and interests. It also serves as an online portfolio and CV.

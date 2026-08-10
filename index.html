@@ -15,6 +15,21 @@
     tailwind.config = {
       theme: {
         extend: {
+          colors: {
+            // Custom Earthy Palette
+            sand: {
+              50: '#FDFCF7',
+              100: '#F7F4EB', // Warm background
+              200: '#EBE5D5',
+              300: '#DCD4C0', // Border lines
+            },
+            earth: {
+              dark: '#2A2825', // Deep warm slate (Primary text)
+              muted: '#6E6A63', // Muted earthy text
+              olive: '#4A5340', // Earthy olive green accent
+              terracotta: '#A65B44', // Terracotta accent
+            }
+          },
           fontFamily: {
             display: ['Syne', 'sans-serif'],
             body: ['Inter', 'sans-serif'],
@@ -24,76 +39,21 @@
     }
   </script>
 </head>
-<body class="bg-[#0A0A0A] text-[#E5E5E5] font-body antialiased min-h-screen selection:bg-white selection:text-black">
+<body class="bg-sand-100 text-earth-dark font-body antialiased min-h-screen selection:bg-earth-olive selection:text-white">
 
-  <div class="max-w-7xl mx-auto min-h-screen grid grid-cols-1 md:grid-cols-12 gap-8 p-6 md:p-12">
+  <div class="max-w-7xl mx-auto min-h-screen grid grid-cols-1 md:grid-cols-12 p-6 md:p-12">
 
-    <aside class="md:col-span-4 lg:col-span-3 flex flex-col justify-between border-b md:border-b-0 md:border-r border-neutral-800 pb-8 md:pb-0 md:pr-8">
+    <aside class="md:col-span-4 lg:col-span-3 flex flex-col justify-between border-b md:border-b-0 md:border-r border-sand-300 pb-8 md:pb-0 md:pr-10">
       <div>
-        <a href="index.html" class="block font-display font-extrabold text-3xl md:text-4xl tracking-tight uppercase leading-none mb-12">
-          Kavya<br /><span class="text-neutral-500">Pokharel</span>
+        <a href="index.html" class="block font-display font-extrabold text-3xl md:text-4xl tracking-tight uppercase leading-none mb-10 text-earth-dark hover:text-earth-terracotta transition-colors">
+          Kavya<br /><span class="text-earth-olive">Pokharel</span>
         </a>
 
         <nav class="flex flex-col space-y-4 font-mono text-sm tracking-wider uppercase">
-          <a href="index.html" class="text-white font-bold flex items-center gap-2">
-            <span class="text-xs text-neutral-500">01.</span> Home
+          <a href="index.html" class="text-earth-dark font-bold flex items-center gap-2">
+            <span class="text-xs text-earth-terracotta">01.</span> Home
           </a>
-          <a href="writing.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-2">
-            <span class="text-xs text-neutral-600">02.</span> Writing
+          <a href="writing.html" class="text-earth-muted hover:text-earth-dark transition-colors flex items-center gap-2">
+            <span class="text-xs text-sand-300">02.</span> Writing
           </a>
-          <a href="projects.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-2">
-            <span class="text-xs text-neutral-600">03.</span> Projects
-          </a>
-          <a href="books.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-2">
-            <span class="text-xs text-neutral-600">04.</span> Books
-          </a>
-          <a href="coursework.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-2">
-            <span class="text-xs text-neutral-600">05.</span> Coursework
-          </a>
-        </nav>
-      </div>
-
-      <div class="hidden md:block pt-12 border-t border-neutral-900">
-        <p class="text-xs font-mono text-neutral-600 uppercase">[ GitHub Pages Portfolio ]</p>
-      </div>
-    </aside>
-
-    <main class="md:col-span-8 lg:col-span-9 flex flex-col justify-center py-6 md:py-12 md:pl-8">
-      
-      <div class="space-y-8 max-w-2xl">
-        
-        <div class="relative w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900">
-          <img src="profile.jpg" alt="Kavya Pokharel" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500">
-        </div>
-
-        <div class="space-y-4">
-          <span class="text-xs font-mono uppercase tracking-widest text-neutral-500 border border-neutral-800 px-3 py-1 rounded-full">
-            Computer Engineering Student
-          </span>
-          
-          <h1 class="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tight text-white">
-            Kavya Pokharel
-          </h1>
-
-          <p class="text-lg md:text-xl text-neutral-400 font-light leading-relaxed">
-            Studying Computer Engineering @ <span class="text-white font-medium">The University of Southern Mississippi</span>. Building at the intersection of hardware, software, and interactive digital systems.
-          </p>
-        </div>
-
-        <div class="pt-4 flex flex-wrap items-center gap-4 font-mono text-sm">
-          <a href="https://www.linkedin.com/in/kavya-p-356050260/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border border-neutral-800 rounded-lg hover:border-neutral-500 hover:bg-neutral-900 transition-all text-neutral-300 hover:text-white">
-            LinkedIn ↗
-          </a>
-          <a href="https://x.com/Kav_Pok" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border border-neutral-800 rounded-lg hover:border-neutral-500 hover:bg-neutral-900 transition-all text-neutral-300 hover:text-white">
-            Twitter ↗
-          </a>
-        </div>
-
-      </div>
-
-    </main>
-
-  </div>
-
-</body>
-</html>
+          <a href="projects.html" class="text-earth-muted hover:text-earth-dark transition-colors flex

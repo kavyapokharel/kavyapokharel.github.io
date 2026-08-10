@@ -12,31 +12,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            sand: {
-              50: '#FDFCF7',
-              100: '#F7F4EB',
-              200: '#EBE5D5',
-              300: '#DCD4C0',
-            },
-            earth: {
-              dark: '#2A2825',
-              muted: '#6E6A63',
-              olive: '#4A5340',
-              terracotta: '#A65B44',
-            }
-          },
-          fontFamily: {
-            display: ['Syne', 'sans-serif'],
-            body: ['Inter', 'sans-serif'],
-          },
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          // Your exact background color (#e6ccb2)
+          'warm-sand': '#e6ccb2',
+          
+          // Accent colors for text and borders
+          earth: {
+            dark: '#2A2825',
+            muted: '#5C544B',
+            olive: '#4A5340',
+            terracotta: '#A65B44',
+          }
+        },
+        fontFamily: {
+          display: ['Syne', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
         },
       },
-    }
-  </script>
+    },
+  }
+</script>
 </head>
 <body class="bg-sand-100 text-earth-dark font-body antialiased min-h-screen selection:bg-earth-olive selection:text-white">
 

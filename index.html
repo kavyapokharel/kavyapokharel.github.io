@@ -16,18 +16,17 @@
       theme: {
         extend: {
           colors: {
-            // Custom Earthy Palette
             sand: {
               50: '#FDFCF7',
-              100: '#F7F4EB', // Warm background
+              100: '#F7F4EB',
               200: '#EBE5D5',
-              300: '#DCD4C0', // Border lines
+              300: '#DCD4C0',
             },
             earth: {
-              dark: '#2A2825', // Deep warm slate (Primary text)
-              muted: '#6E6A63', // Muted earthy text
-              olive: '#4A5340', // Earthy olive green accent
-              terracotta: '#A65B44', // Terracotta accent
+              dark: '#2A2825',
+              muted: '#6E6A63',
+              olive: '#4A5340',
+              terracotta: '#A65B44',
             }
           },
           fontFamily: {
@@ -41,11 +40,11 @@
 </head>
 <body class="bg-sand-100 text-earth-dark font-body antialiased min-h-screen selection:bg-earth-olive selection:text-white">
 
-  <div class="max-w-7xl mx-auto min-h-screen grid grid-cols-1 md:grid-cols-12 p-6 md:p-12">
+  <div class="w-full max-w-7xl mx-auto min-h-screen grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 p-6 md:p-12">
 
-    <aside class="md:col-span-4 lg:col-span-3 flex flex-col justify-between border-b md:border-b-0 pb-8 md:pb-0 pr-0">
+    <aside class="md:col-span-3 flex flex-col justify-between pb-8 md:pb-0">
       <div>
-        <a href="index.html" class="block font-display font-extrabold text-3xl md:text-4xl tracking-tight uppercase leading-none mb-10 text-earth-dark hover:text-earth-terracotta transition-colors">
+        <a href="index.html" class="block font-display font-extrabold text-2xl md:text-3xl tracking-tight uppercase leading-none mb-10 text-earth-dark hover:text-earth-terracotta transition-colors">
           Kavya<br /><span class="text-earth-olive">Pokharel</span>
         </a>
 
@@ -62,20 +61,20 @@
           <a href="books.html" class="text-earth-muted hover:text-earth-dark transition-colors flex items-center gap-2">
             <span class="text-xs text-sand-300">04.</span> Books
           </a>
-          <a href="coursework.html" class="text-neutral-400 hover:text-earth-dark transition-colors flex items-center gap-2">
+          <a href="coursework.html" class="text-earth-muted hover:text-earth-dark transition-colors flex items-center gap-2">
             <span class="text-xs text-sand-300">05.</span> Coursework
           </a>
         </nav>
       </div>
 
-      <div class="hidden md:block pt-12 border-t border-sand-300">
+      <div class="hidden md:block pt-8">
         <p class="text-xs font-mono text-earth-muted uppercase">[ GitHub Pages Portfolio ]</p>
       </div>
     </aside>
 
-    <main class="md:col-span-8 lg:col-span-9 flex flex-col justify-center py-8 md:py-12 md:pl-16">
+    <main class="md:col-span-9 flex flex-col justify-center py-8 md:py-12">
       
-      <div class="space-y-8 max-w-2xl">
+      <div class="space-y-8 max-w-xl">
         
         <div class="relative w-36 h-36 md:w-44 md:h-44 rounded-2xl overflow-hidden border border-sand-300 bg-sand-200 shadow-sm">
           <img src="profile.jpg" alt="Kavya Pokharel" class="w-full h-full object-cover sepia-[0.15] contrast-[1.05] hover:sepia-0 transition-all duration-500">

@@ -1,43 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
 <head>
-<title>Home</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kavya Pokharel — Home</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
 </head>
+<body class="bg-[#0A0A0A] text-[#E5E5E5] font-body antialiased min-h-screen selection:bg-white selection:text-black">
 
-<body>
+  <div class="max-w-7xl mx-auto min-h-screen grid grid-cols-1 md:grid-cols-12 gap-8 p-6 md:p-12">
 
-<div class="container">
+    <aside class="md:col-span-4 lg:col-span-3 flex flex-col justify-between border-b md:border-b-0 md:border-r border-neutral-800 pb-8 md:pb-0 md:pr-8">
+      <div>
+        <a href="index.html" class="block font-display font-extrabold text-3xl md:text-4xl tracking-tight uppercase leading-none mb-12">
+          Kavya<br /><span class="text-neutral-500">Pokharel</span>
+        </a>
 
-<div class="sidebar">
-<h3>Kavya<br>Pokharel</h3>
+        <nav class="flex flex-col space-y-4 font-mono text-sm tracking-wider uppercase">
+          <a href="index.html" class="text-white font-bold flex items-center gap-2">
+            <span class="text-xs text-neutral-500">01.</span> Home
+          </a>
+          <a href="writing.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-2">
+            <span class="text-xs text-neutral-600">02.</span> Writing
+          </a>
+          <a href="projects.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-2">
+            <span class="text-xs text-neutral-600">03.</span> Projects
+          </a>
+          <a href="books.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-2">
+            <span class="text-xs text-neutral-600">04.</span> Books
+          </a>
+          <a href="coursework.html" class="text-neutral-400 hover:text-white transition-colors flex items-center gap-2">
+            <span class="text-xs text-neutral-600">05.</span> Coursework
+          </a>
+        </nav>
+      </div>
 
-<a href="index.html">Home</a>
-<a href="writing.html">Writing</a>
-<a href="projects.html">Projects</a>
-<a href="books.html">Books</a>
-<a href="coursework.html">Coursework</a>
-</div>
+      <div class="hidden md:block pt-12 border-t border-neutral-900">
+        <p class="text-xs font-mono text-neutral-600 uppercase">[ GitHub Pages Portfolio ]</p>
+      </div>
+    </aside>
 
-<div class="main">
+    <main class="md:col-span-8 lg:col-span-9 flex flex-col justify-center py-6 md:py-12 md:pl-8">
+      
+      <div class="space-y-8 max-w-2xl">
+        
+        <div class="relative w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900">
+          <img src="profile.jpg" alt="Kavya Pokharel" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500">
+        </div>
 
-<img src="profile.jpg" class="profile">
+        <div class="space-y-4">
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-500 border border-neutral-800 px-3 py-1 rounded-full">
+            Computer Engineering Student
+          </span>
+          
+          <h1 class="font-display text-4xl md:text-6xl font-extrabold uppercase tracking-tight text-white">
+            Kavya Pokharel
+          </h1>
 
-<h2>Kavya Pokharel</h2>
+          <p class="text-lg md:text-xl text-neutral-400 font-light leading-relaxed">
+            Studying Computer Engineering @ <span class="text-white font-medium">The University of Southern Mississippi</span>. Building at the intersection of hardware, software, and interactive digital systems.
+          </p>
+        </div>
 
-<p>Computer Engineering Student @ The University of Southern Mississippi</p>
+        <div class="pt-4 flex flex-wrap items-center gap-4 font-mono text-sm">
+          <a href="https://www.linkedin.com/in/kavya-p-356050260/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border border-neutral-800 rounded-lg hover:border-neutral-500 hover:bg-neutral-900 transition-all text-neutral-300 hover:text-white">
+            LinkedIn ↗
+          </a>
+          <a href="https://x.com/Kav_Pok" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border border-neutral-800 rounded-lg hover:border-neutral-500 hover:bg-neutral-900 transition-all text-neutral-300 hover:text-white">
+            Twitter ↗
+          </a>
+        </div>
 
+      </div>
 
-<div class="links">
+    </main>
 
-<a href="https://www.linkedin.com/in/kavya-p-356050260/">LinkedIn</a> |
-<a href="https://x.com/Kav_Pok">Twitter</a> |
-
-</div>
-
-</div>
-
-</div>
+  </div>
 
 </body>
 </html>

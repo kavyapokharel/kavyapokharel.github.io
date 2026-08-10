@@ -1,62 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
 <head>
-<title>Coursework</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kavya Pokharel — Coursework</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sand: {
+              50: '#FDFCF7',
+              100: '#F7F4EB',
+              200: '#EBE5D5',
+              300: '#DCD4C0',
+            },
+            earth: {
+              dark: '#2A2825',
+              muted: '#6E6A63',
+              olive: '#4A5340',
+              terracotta: '#A65B44',
+            }
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
 </head>
+<body class="bg-sand-100 text-earth-dark font-body antialiased min-h-screen selection:bg-earth-olive selection:text-white">
 
-<body>
+  <div class="w-full max-w-7xl mx-auto min-h-screen grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 p-6 md:p-12">
 
-<div class="container">
+    <aside class="md:col-span-3 flex flex-col justify-between pb-8 md:pb-0">
+      <div>
+        <a href="index.html" class="block font-display font-extrabold text-2xl md:text-3xl tracking-tight uppercase leading-none mb-10 text-earth-dark hover:text-earth-terracotta transition-colors">
+          Kavya<br /><span class="text-earth-olive">Pokharel</span>
+        </a>
 
-<div class="sidebar">
-<h3>Kavya<br>Pokharel</h3>
-
-<a href="index.html">Home</a>
-<a href="writing.html">Writing</a>
-<a href="projects.html">Projects</a>
-<a href="books.html">Books</a>
-<a href="coursework.html">Coursework</a>
-</div>
-
-<div class="main content">
-
-<h3>University of Southern Mississippi</h3>
-
-<ul>
-<li>MAT 167: Calculus I</li>
-<li>MAT 168: Calculus II</li>
-<li>CE 220: Electric Circuit Analysis</li>
-<li>MAT 340: Discrete Mathematics</li>
-<li>CE 101: Fundamentals of Computer Engineering</li>
-<li>CSC 101: Programming in Python</li>
-<li>CSC 102: Programming in C++</li>
-</ul>
-
-<h3>St. Xavier’s College</h3>
-
-<ul>
-<li>Physics I & II</li>
-<li>Organic Chemistry I & II</li>
-<li>Chemistry I & II</li>
-<li>Zoology</li>
-<li>Botany</li>
-<li>Linear Algebra</li>
-<li>Calculus I & II</li>
-</ul>
-
-<h3>Independent / Research-Oriented Study</h3>
-
-<ul>
-<li>Signal Processing for Biomedical Data</li>
-<li>Embedded Systems Engineering</li>
-<li>Computational Modeling of Polymer Networks</li>
-<li>Computer Vision with OpenCV & MediaPipe</li>
-</ul>
-
-</div>
-
-</div>
-
-</body>
-</html>
+        <nav class="flex flex-col space-y-4 font-mono text-sm tracking-wider uppercase">
+          <a href="index.html" class="text-earth-muted hover:text-earth-dark transition-colors flex items-center gap-2">
+            <span class="text-xs text-sand-300">01.</span> Home
+          </a>
+          <a href="writing.html" class="text-earth-muted hover:text-earth-dark transition-colors flex items-center gap-2">
+            <span class="text-xs text-sand-300">02.</span> Writing
+          </a>
+          <a href="projects.html" class="text-earth-muted hover:text-earth-dark transition-colors flex items-center gap-2">
+            <span class="text-xs text-sand-300">03.</span> Projects
+          </a>
+          <a href="books.html" class="text-earth-muted hover:text-earth-dark transition-colors flex items-center gap-2">
